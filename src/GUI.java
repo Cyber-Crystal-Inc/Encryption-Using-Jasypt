@@ -60,9 +60,8 @@ public class GUI {
 		
 		JLabel icon = new JLabel("");
 		icon.setBounds(344, 6, 100, 100);
-		String path="./Resources/Images/Cyber Crystal Square.jpg";//./Resources
 		
-		ImageIcon myimage = new ImageIcon (path);
+		ImageIcon myimage = new ImageIcon (getClass().getResource("Cyber Crystal Square.jpg"));
 		Image img = myimage.getImage();
 		Image newImg = img.getScaledInstance(icon.getWidth(), icon.getHeight(), Image.SCALE_SMOOTH);
 		ImageIcon image = new ImageIcon(newImg);
@@ -159,9 +158,7 @@ public class GUI {
 			public void mouseEntered(MouseEvent e) {
 				icon.setBounds(BL.Bigger(icon.getX(), icon.getY(), icon.getWidth(),icon.getHeight()));
 				
-				String path="./Resources/Images/Cyber Crystal Square.jpg";//./Resources
-				
-				ImageIcon myimage = new ImageIcon (path);
+				ImageIcon myimage = new ImageIcon (getClass().getResource("Cyber Crystal Square.jpg"));
 				Image img = myimage.getImage();
 				Image newImg = img.getScaledInstance(icon.getWidth(), icon.getHeight(), Image.SCALE_SMOOTH);
 				ImageIcon image = new ImageIcon(newImg);
@@ -174,9 +171,7 @@ public class GUI {
 				Button_Largener BL = new Button_Largener();
 				icon.setBounds(BL.Smaller(icon.getX(), icon.getY(), icon.getWidth(), icon.getHeight()));
 				
-				String path="./Resources/Images/Cyber Crystal Square.jpg";
-				
-				ImageIcon myimage = new ImageIcon (path);
+				ImageIcon myimage = new ImageIcon (getClass().getResource("Cyber Crystal Square.jpg"));
 				Image img = myimage.getImage();
 				Image newImg = img.getScaledInstance(icon.getWidth(), icon.getHeight(), Image.SCALE_SMOOTH);
 				ImageIcon image = new ImageIcon(newImg);
